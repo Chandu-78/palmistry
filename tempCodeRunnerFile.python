@@ -1,0 +1,20 @@
+import streamlit as st
+
+# Define the title and description of your app
+st.title('Palmistry Model Interface')
+st.write('Upload an image of a palm to get predictions from the model.')
+
+# Add an image upload widget
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])
+
+# Check if an image has been uploaded
+if uploaded_file is not None:
+    # Display the uploaded image
+    image = Image.open(uploaded_file)
+    st.image(image, caption='Uploaded Image', use_column_width=True)
+    
+    # Perform inference with your model
+    # Replace this section with your actual model inference code
+    # For demonstration purposes, here we simply display a placeholder prediction
+    prediction = "Placeholder prediction"
+    st.write('Prediction:', prediction)

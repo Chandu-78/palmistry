@@ -1,2 +1,2 @@
-# palmistry
-Hand line Detection
+# palmistry-main
+ detection of hand lines
